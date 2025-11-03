@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Block Blast Puzzle</title>
-  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/genizy/bl/TemplateData/favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/genizy/bl/TemplateData/style.css">
-  <link rel="manifest" href="https://cdn.jsdelivr.net/gh/genizy/bl/manifest.webmanifest">
+  <link rel="shortcut icon" href="/TemplateData/favicon.ico">
+  <link rel="stylesheet" href="/TemplateData/style.css">
+  <link rel="manifest" href="/manifest.webmanifest">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC4ZKKC8EF"></script>
@@ -45,7 +45,7 @@
     // Service Worker registration
     window.addEventListener("load", function () {
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("https://cdn.jsdelivr.net/gh/genizy/bl/ServiceWorker.js");
+        navigator.serviceWorker.register("/ServiceWorker.js");
       }
     });
 
@@ -73,7 +73,7 @@
       updateBannerVisibility();
     }
 
-    const buildUrl = "https://cdn.jsdelivr.net/gh/genizy/bl/Build";
+    const buildUrl = "/Build";
     const loaderUrl = buildUrl + "/BlockBlast1.1-8.loader.js";
     const config = {
       dataUrl: buildUrl + "/BlockBlast1.1-8.data.unityweb",
@@ -120,3 +120,4 @@
   </script>
 </body>
 </html>
+
